@@ -9,3 +9,11 @@ export const getCharacters = () => {
     })));
 };
 
+export const getCharacter = name => {
+  return fetch(`${URL}${name}`)
+    .then(res => res.json())
+    .then(({ character }) => ({
+      ...character,
+      image: character.image || '../../assets/believe.jpg'
+    }));
+};

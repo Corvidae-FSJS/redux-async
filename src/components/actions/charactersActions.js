@@ -1,4 +1,4 @@
-import { getCharacters, getCharacter } from '../services/xfilesAPI';
+import { getCharacters, getCharacter } from '../services/xfiles-api';
 
 export const FETCH_CHARACTERS_LOADING = 'FETCH_CHARACTERS_LOADING';
 export const FETCH_CHARACTERS = 'FETCH_CHARACTERS';
