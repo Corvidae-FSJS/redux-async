@@ -13,7 +13,10 @@ function DisplayCharacters({ characters, loading, fetchCharacters }) {
   if(loading) return <h1>The Truth Is Out There...</h1>;
 
   return (
-    <Characters characters={characters} />
+    <>
+      <h1>Character Gallery</h1>
+      <Characters characters={characters} />
+    </>
   );
 }
 

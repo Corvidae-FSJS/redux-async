@@ -14,9 +14,9 @@ const CharacterDetail = ({ name, image, occupation, description, portrayedby }) 
 CharacterDetail.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  occupation: PropTypes.number.isRequired,
+  occupation: PropTypes.string,
   description: PropTypes.string.isRequired,
-  portrayedby: PropTypes.string.isRequired,
+  portrayedby: PropTypes.string,
 };
 
 export default CharacterDetail;

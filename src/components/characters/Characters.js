@@ -3,16 +3,15 @@ import PropTypes from 'prop-types';
 import Character from './Character';
 //import styles from './Characters.css';
 
-const Characters = ({ characters }) => {
-  const characterElements = characters.map(character => (
-    <li key={character.name}>
+const Characters = ({ characters }) => {  
+  const characterElements = characters.map((character, i) => (
+    <li key={`${character.name}-${i}`}>
       <Character {...character} />
     </li>
   ));
 
   return (
-    // eslint-disable-next-line no-undef
-    <ul className={styles.Characters}>
+    <ul>
       {characterElements}
     </ul>
   );
